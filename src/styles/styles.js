@@ -48,5 +48,8 @@ module.exports = {
         fontWeight: '300',
         textAlign: 'center',
         paddingHorizontal: 50
+    },
+    'textBold':{
+        fontWeight: '700'
     }
 }

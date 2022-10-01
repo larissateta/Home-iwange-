@@ -46,7 +46,7 @@ export default function Login({navigation}){
                     <Text className="text-white text-base font-semibold text-center">Login</Text>
                 </TouchableOpacity>
                 <Text style={[styles['text-roboto'],styles['app-main-blue']]} className="text-base text-center mt-5 font-bold ">Forgot Password?</Text>
-                <Text style={[styles['text-roboto']]} className="text-base text-center mt-10 pt-12">Don't have an account? <Link to={{ screen: 'MainScreen' }} style={[styles['app-main-blue']]}>Sign up</Link></Text>
+                <Text style={[styles['text-roboto']]} className="text-base text-center mt-10 pt-12">Don't have an account? <Link to={{ screen: 'Settings' }} style={[styles['app-main-blue']]}>Sign up</Link></Text>
             </View>
         </NotifierWrapper>
     )
