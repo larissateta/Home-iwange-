@@ -6,8 +6,9 @@ import Login from "../screens/auth/Login.screen";
 import CarouScreen from "../screens/slide/Carou.screen";
 import Main from "../screens/main";
 import Security from "../screens/Settings/SecurityScreen";
-import Settings from "../screens/Settings/Settings.screen"
-import Support from "../screens/Settings/Support.screen"
+import Settings from "../screens/Settings/Settings.screen";
+import Support from "../screens/Settings/Support.screen";
+import Languages from "../screens/Settings/Languages.screen";
 
 const stack = createStackNavigator();
 
@@ -58,6 +59,10 @@ const StackNavigation = ()=>{
                 <stack.Screen
                     name="Support"
                     component={Support}
+                />
+                <stack.Screen
+                    name="Change language"
+                    component={Languages}
                 />
             </stack.Navigator>
         </NavigationContainer>

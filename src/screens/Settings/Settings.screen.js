@@ -24,14 +24,14 @@ export default Settings = ({navigation}) =>{
                 </View>
                 <AntIcon name="right" size={18} color={'#4C93D4'} style={{paddingTop: 10}}/>
             </TouchableOpacity>
-            <TouchableOpacity style={{justifyContent:'space-between', width:'90%', flexDirection: 'row', paddingTop: 20, borderBottomColor: '#8D8D8D', borderBottomWidth: 1, marginLeft: 25, paddingBottom: 20}}>
+            <TouchableOpacity style={{justifyContent:'space-between', width:'90%', flexDirection: 'row', paddingTop: 20, borderBottomColor: '#8D8D8D', borderBottomWidth: 1, marginLeft: 25, paddingBottom: 20}} onPress= {() => navigation.navigate('Change language')}>
                 <View style={{paddingLeft: 10}}>
                     <Text style={[styles['textBold'],styles['text-roboto'], {fontSize: 18}]}>Change language</Text>
                 </View>
                 <AntIcon name="right" size={18} color={'#4C93D4'} style={{paddingTop: 10}}/>
             </TouchableOpacity>
 
-            <TouchableOpacity style={{justifyContent:'space-between', width:'90%', flexDirection: 'row', paddingTop: 30, borderBottomColor: '#8D8D8D', borderBottomWidth: 1, marginLeft: 25, paddingBottom: 20}}>
+            <TouchableOpacity style={{justifyContent:'space-between', width:'90%', flexDirection: 'row', paddingTop: 30, borderBottomColor: '#8D8D8D', borderBottomWidth: 1, marginLeft: 25, paddingBottom: 20}} onPress= { () => navigation.navigate('Login')}>
                 <View style={{paddingLeft: 10}}>
                     <Text style={[styles['textBold'],styles['text-roboto'], {fontSize: 18}]}>Sign out</Text>
                 </View>
