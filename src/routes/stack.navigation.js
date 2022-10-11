@@ -9,6 +9,9 @@ import Security from "../screens/Settings/SecurityScreen";
 import Settings from "../screens/Settings/Settings.screen";
 import Support from "../screens/Settings/Support.screen";
 import Languages from "../screens/Settings/Languages.screen";
+import PasswordChange from "../screens/Settings/Security/password.screen";
+import ManageDevice from "../screens/Settings/Security/devices.screen"
+import Mobiles from '../screens/Settings/Security/mobiles.screen'
 
 const stack = createStackNavigator();
 
@@ -63,6 +66,18 @@ const StackNavigation = ()=>{
                 <stack.Screen
                     name="Change language"
                     component={Languages}
+                />
+                <stack.Screen
+                    name="Change password"
+                    component={PasswordChange}
+                />
+                <stack.Screen
+                    name="Manage Devices"
+                    component={ManageDevice}
+                />
+                <stack.Screen
+                    name="Mobile Devices"
+                    component={Mobiles}
                 />
             </stack.Navigator>
         </NavigationContainer>
